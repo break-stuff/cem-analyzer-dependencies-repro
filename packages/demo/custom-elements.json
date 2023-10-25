@@ -22,79 +22,13 @@
               "name": ""
             }
           ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "docsHint",
-              "type": {
-                "text": "string"
-              },
-              "default": "'Click on the Vite and Lit logos to learn more'",
-              "description": "Copy for the read the docs hint.",
-              "attribute": "docsHint",
-              "inheritedFrom": {
-                "name": "MyElement",
-                "module": "src/my-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "count",
-              "type": {
-                "text": "number"
-              },
-              "default": "0",
-              "description": "The number of times the button has been clicked.",
-              "attribute": "count",
-              "inheritedFrom": {
-                "name": "MyElement",
-                "module": "src/my-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "_onClick",
-              "privacy": "protected",
-              "inheritedFrom": {
-                "name": "MyElement",
-                "module": "src/my-element.ts"
-              }
-            }
-          ],
+          "members": [],
           "superclass": {
             "name": "MyElement",
             "package": "core"
           },
           "tagName": "new-element",
-          "customElement": true,
-          "attributes": [
-            {
-              "name": "docsHint",
-              "type": {
-                "text": "string"
-              },
-              "default": "'Click on the Vite and Lit logos to learn more'",
-              "description": "Copy for the read the docs hint.",
-              "fieldName": "docsHint",
-              "inheritedFrom": {
-                "name": "MyElement",
-                "module": "src/my-element.ts"
-              }
-            },
-            {
-              "name": "count",
-              "type": {
-                "text": "number"
-              },
-              "default": "0",
-              "description": "The number of times the button has been clicked.",
-              "fieldName": "count",
-              "inheritedFrom": {
-                "name": "MyElement",
-                "module": "src/my-element.ts"
-              }
-            }
-          ]
+          "customElement": true
         }
       ],
       "exports": [
@@ -118,7 +52,7 @@
     },
     {
       "kind": "javascript-module",
-      "path": "dist/assets/index-49a2e913.js",
+      "path": "dist/assets/index-083d4ff0.js",
       "declarations": [
         {
           "kind": "function",
@@ -149,7 +83,7 @@
           "name": "e",
           "declaration": {
             "name": "i",
-            "module": "dist/assets/index-49a2e913.js"
+            "module": "dist/assets/index-083d4ff0.js"
           }
         },
         {
@@ -157,7 +91,7 @@
           "name": "e",
           "declaration": {
             "name": "r",
-            "module": "dist/assets/index-49a2e913.js"
+            "module": "dist/assets/index-083d4ff0.js"
           }
         }
       ]
