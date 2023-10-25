@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/new-element.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "An example element.",
+          "name": "NewElement",
+          "cssParts": [
+            {
+              "description": "The button",
+              "name": "button"
+            }
+          ],
+          "slots": [
+            {
+              "description": "This element has a slot",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "docsHint",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Click on the Vite and Lit logos to learn more'",
+              "description": "Copy for the read the docs hint.",
+              "attribute": "docsHint",
+              "inheritedFrom": {
+                "name": "MyElement",
+                "module": "src/my-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "count",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "description": "The number of times the button has been clicked.",
+              "attribute": "count",
+              "inheritedFrom": {
+                "name": "MyElement",
+                "module": "src/my-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "_onClick",
+              "privacy": "protected",
+              "inheritedFrom": {
+                "name": "MyElement",
+                "module": "src/my-element.ts"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "MyElement",
+            "package": "core"
+          },
+          "tagName": "new-element",
+          "customElement": true,
+          "attributes": [
+            {
+              "name": "docsHint",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Click on the Vite and Lit logos to learn more'",
+              "description": "Copy for the read the docs hint.",
+              "fieldName": "docsHint",
+              "inheritedFrom": {
+                "name": "MyElement",
+                "module": "src/my-element.ts"
+              }
+            },
+            {
+              "name": "count",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "description": "The number of times the button has been clicked.",
+              "fieldName": "count",
+              "inheritedFrom": {
+                "name": "MyElement",
+                "module": "src/my-element.ts"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NewElement",
+          "declaration": {
+            "name": "NewElement",
+            "module": "src/new-element.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "new-element",
+          "declaration": {
+            "name": "NewElement",
+            "module": "src/new-element.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/assets/index-49a2e913.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "s"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "i",
+          "parameters": [
+            {
+              "name": "s"
+            }
+          ]
+        },
+        {
+          "kind": "variable",
+          "name": "r"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "i",
+            "module": "dist/assets/index-49a2e913.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "r",
+            "module": "dist/assets/index-49a2e913.js"
+          }
+        }
+      ]
+    }
+  ]
+}

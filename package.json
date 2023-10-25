@@ -1,0 +1,19 @@
+{
+  "name": "cem-analyzer-dependencies-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "analyze": "npm run analyze --ws",
+    "build": "npm run build --ws",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.9.0"
+  }
+}

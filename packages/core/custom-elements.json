@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./dist"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "\"./my-element\""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/my-element.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "MyElement",
+          "default": "class MyElement extends LitElement {\n    constructor() {\n        super(...arguments);\n        /**\n         * Copy for the read the docs hint.\n         */\n        this.docsHint = 'Click on the Vite and Lit logos to learn more';\n        /**\n         * The number of times the button has been clicked.\n         */\n        this.count = 0;\n    }\n    render() {\n        return html `\n      <div>\n        <a href=\"https://vitejs.dev\" target=\"_blank\">\n          <img src=${viteLogo} class=\"logo\" alt=\"Vite logo\" />\n        </a>\n        <a href=\"https://lit.dev\" target=\"_blank\">\n          <img src=${litLogo} class=\"logo lit\" alt=\"Lit logo\" />\n        </a>\n      </div>\n      <slot></slot>\n      <div class=\"card\">\n        <button @click=${this._onClick} part=\"button\">\n          count is ${this.count}\n        </button>\n      </div>\n      <p class=\"read-the-docs\">${this.docsHint}</p>\n    `;\n    }\n    _onClick() {\n        this.count++;\n    }\n}",
+          "description": "An example element."
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyElement",
+          "declaration": {
+            "name": "MyElement",
+            "module": "dist/my-element.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "\"./my-element\""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/my-element.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "An example element.",
+          "name": "MyElement",
+          "cssParts": [
+            {
+              "description": "The button",
+              "name": "button"
+            }
+          ],
+          "slots": [
+            {
+              "description": "This element has a slot",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "docsHint",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Click on the Vite and Lit logos to learn more'",
+              "description": "Copy for the read the docs hint.",
+              "attribute": "docsHint"
+            },
+            {
+              "kind": "field",
+              "name": "count",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "description": "The number of times the button has been clicked.",
+              "attribute": "count"
+            },
+            {
+              "kind": "method",
+              "name": "_onClick",
+              "privacy": "protected"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "docsHint",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Click on the Vite and Lit logos to learn more'",
+              "description": "Copy for the read the docs hint.",
+              "fieldName": "docsHint"
+            },
+            {
+              "name": "count",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "description": "The number of times the button has been clicked.",
+              "fieldName": "count"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "my-element",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyElement",
+          "declaration": {
+            "name": "MyElement",
+            "module": "src/my-element.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-element",
+          "declaration": {
+            "name": "MyElement",
+            "module": "src/my-element.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
